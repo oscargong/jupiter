@@ -1,12 +1,18 @@
 
 
 # Twitch Streaming and Recommendation Application 
-Video Game Live Streaming Application based on Amazon Web Services (AWS) and React.
+This is a Twitch streaming application with a live video recommendation API and search system, based on a variety of recommendation algorithms.
 
-This is a  live video recommendation API and search system, with a variety of recommendation algorithms, 
+Build by React, Java Servlet and Tomcat, deplyed on AWS.
 
-Deploy a set of reliable back-end services and databases on Amazon Web Services, and learn how to test and maintain.
 
-After completing this project, you will also be able to demonstrate this project during the interview. 
 
-This project will improve your chances of getting interviews with top-tier technology 
+
+
+## Twitch API
+
+- [Authentation](https://dev.twitch.tv/docs/authentication/getting-tokens-oauth#oauth-client-credentials-flow)
+
+- [Get top games](https://dev.twitch.tv/docs/api/reference#get-top-games): Gets games sorted by number of current viewers on Twitch, most popular first.
+- [Get games](https://dev.twitch.tv/docs/api/reference#get-games): Gets game information by game ID or name.
+
