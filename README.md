@@ -7,9 +7,14 @@ Build by React, Java Servlet and Tomcat, deplyed on AWS.
 
 
 
+## Local API
+
+- GET top games: `http://localhost:8080/jupiter/game`
+- GET search game by name: `http://localhost:8080/jupiter/game?game_name=Starcraft II`
 
 
-## Twitch API
+
+## Twitch API Reference
 
 - [Authentation](https://dev.twitch.tv/docs/authentication/getting-tokens-oauth#oauth-client-credentials-flow)
 
