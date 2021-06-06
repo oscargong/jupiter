@@ -5,7 +5,9 @@ This is a Twitch streaming application with a live video recommendation API and 
 
 Build by React, Java Servlet and Tomcat, deplyed on AWS.
 
+## Diagram
 
+![](./resources/TwichAPI.png)
 
 ## Local API
 
