@@ -5,13 +5,6 @@ This is a Twitch streaming application with a live video recommendation API and 
 
 Built by React, Java Servlet and Tomcat, deployed on AWS.
 
-## Diagram
-
-![](./resources/TwichAPI.svg)
-
-<img src="./resources/MySQL.svg" style="zoom:67%;" />
-
-
 
 ## Local API
 
@@ -45,4 +38,13 @@ Built by React, Java Servlet and Tomcat, deployed on AWS.
     user=YOUR_ADMIN
     password=YOUR_PASSWORD
     ```
+### EC2
+
+
+
+## Diagram
+
+![](./resources/TwichAPI.svg)
+
+<img src="./resources/MySQL.svg" style="zoom:75%;" />    
 
