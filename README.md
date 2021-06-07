@@ -9,7 +9,7 @@ Built by React, Java Servlet and Tomcat, deployed on AWS.
 
 ![](./resources/TwichAPI.svg)
 
-<img src="./resources/MySQL.svg" style="zoom:50%;" />
+<img src="./resources/MySQL.svg" style="zoom:35%;" />
 
 
 
