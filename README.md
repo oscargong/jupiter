@@ -41,7 +41,6 @@ Built by React, Java Servlet and Tomcat, deployed on AWS.
 ### EC2
 
 
-
 ## Diagram
 
 ![](./resources/TwichAPI.svg)
