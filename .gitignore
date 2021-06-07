@@ -28,3 +28,5 @@ hs_err_pid*
 
 # macOS
 .DS_Store
+target/classes/config.properties
+src/main/resources/config.properties

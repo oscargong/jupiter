@@ -3,18 +3,22 @@
 # Twitch Streaming and Recommendation Application 
 This is a Twitch streaming application with a live video recommendation API and search system, based on a variety of recommendation algorithms.
 
-Build by React, Java Servlet and Tomcat, deplyed on AWS.
+Built by React, Java Servlet and Tomcat, deployed on AWS.
 
 ## Diagram
 
-![](./resources/TwichAPI.png)
+![](./resources/TwichAPI.svg)
+
+<img src="./resources/MySQL.svg" style="zoom:67%;" />
+
+
 
 ## Local API
 
-- GET top games: `http://localhost:8080/jupiter/game`
-- GET search game by name: `http://localhost:8080/jupiter/game?game_name=Starcraft II`
+- *GET* top games: `http://localhost:8080/jupiter/game`
+- *GET* search game by name: `http://localhost:8080/jupiter/game?game_name=Starcraft II`
 
-
+- *GET* search streams/video/clip by `game_id`: `http://localhost:8080/jupiter/search?game_id=490422`
 
 ## Twitch API Reference
 
@@ -25,4 +29,20 @@ Build by React, Java Servlet and Tomcat, deplyed on AWS.
     - https://dev.twitch.tv/docs/api/reference#get-streams
     - https://dev.twitch.tv/docs/api/reference#get-videos
     - https://dev.twitch.tv/docs/api/reference#get-clips
+
+## AWS
+
+### *MySQL DB Instance on RDS*
+
+- Create a MySQL DB Instance on AWS RDS.
+
+- Change `db/MySQLDBUtil` `INSTANCE` to your MySQL DB Instance's endpoint.
+
+- Create a `config.properties` under `main/resources`, add the following lines.
+
+    ```properties
+    # MySQL Properties
+    user=YOUR_ADMIN
+    password=YOUR_PASSWORD
+    ```
 
