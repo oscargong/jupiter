@@ -36,8 +36,16 @@ Built by React, Java Servlet and Tomcat, deployed on AWS.
     user=YOUR_ADMIN
     password=YOUR_PASSWORD
     ```
+    
+- Run `db/MySQLTableCreator`, it will create three tables in your RDS instance: `favorite_records`, `items`, `users`.
 - Schema: see diagram.  
+
+
 ### EC2
+
+Deploy instruction:
+
+- TODO
 
 
 ## Diagram
