@@ -1,5 +1,3 @@
-
-
 # Twitch Streaming and Recommendation Application 
 This is a Twitch streaming application with a live video recommendation API and search system, based on a variety of recommendation algorithms.
 
@@ -38,12 +36,15 @@ Built by React, Java Servlet and Tomcat, deployed on AWS.
     user=YOUR_ADMIN
     password=YOUR_PASSWORD
     ```
+- Schema: see diagram.  
 ### EC2
 
 
 ## Diagram
 
-![](./resources/TwichAPI.svg)
+![](https://raw.githubusercontent.com/oscargong/jupiter/main/resources/TwichAPI.svg)
 
-<img src="./resources/MySQL.svg" style="zoom:75%;" />    
+
+
+<img src="https://raw.githubusercontent.com/oscargong/jupiter/main/resources/MySQL.svg" style="zoom:75%;" />    
 

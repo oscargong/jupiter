@@ -2,6 +2,8 @@ package com.laioffer.jupiter.db;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.Properties;
 
 public class MySQLDBUtil {
@@ -20,6 +22,13 @@ public class MySQLDBUtil {
 
         String username = prop.getProperty("user");
         String password = prop.getProperty("password");
+
+        // Encode special characters in your password.
+        try {
+            password = URLEncoder.encode(password, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
 
         return String.format("jdbc:mysql://%s:%s/%s?user=%s&password=%s&autoReconnect=true&serverTimezone=UTC&createDatabaseIfNotExist=true",
                 INSTANCE, PORT_NUM, DB_NAME, username, password);
