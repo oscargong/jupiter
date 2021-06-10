@@ -8,8 +8,12 @@ Built by React, Java Servlet and Tomcat, deployed on AWS.
 
 - *GET* top games: `http://localhost:8080/jupiter/game`
 - *GET* search game by name: `http://localhost:8080/jupiter/game?game_name=Starcraft II`
-
 - *GET* search streams/video/clip by `game_id`: `http://localhost:8080/jupiter/search?game_id=490422`
+- *POST* add favorite item  `http://localhost:8080/jupiter/favorite?user_id=1111`
+    - request body: https://codeshare.io/JbrgbE
+- *GET* get favorite item `http://localhost:8080/jupiter/favorite?user_id=1111`
+- *DEL* delete favorite item `http://localhost:8080/jupiter/favorite?user_id=1111`
+    - request body: https://codeshare.io/JbrgbE
 
 ## Twitch API Reference
 
@@ -50,7 +54,7 @@ Deploy instruction:
 
 ## Diagram
 
-![](https://raw.githubusercontent.com/oscargong/jupiter/main/resources/TwichAPI.svg)
+![](https://raw.githubusercontent.com/oscargong/jupiter/main/resources/TwitchAPI.svg)
 
 
 

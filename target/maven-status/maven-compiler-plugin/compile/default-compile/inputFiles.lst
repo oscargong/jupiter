@@ -1,3 +1,14 @@
+/Users/oscar/Developer/LaiOffer/jupiter/src/main/java/com/laioffer/jupiter/entity/ItemType.java
 /Users/oscar/Developer/LaiOffer/jupiter/src/main/java/com/laioffer/jupiter/HelloServlet.java
 /Users/oscar/Developer/LaiOffer/jupiter/src/main/java/com/laioffer/jupiter/entity/Game.java
+/Users/oscar/Developer/LaiOffer/jupiter/src/main/java/com/laioffer/jupiter/entity/Item.java
 /Users/oscar/Developer/LaiOffer/jupiter/src/main/java/com/laioffer/jupiter/serverlet/GameServlet.java
+/Users/oscar/Developer/LaiOffer/jupiter/src/main/java/com/laioffer/jupiter/db/MySQLTableCreator.java
+/Users/oscar/Developer/LaiOffer/jupiter/src/main/java/com/laioffer/jupiter/entity/FavoriteRequestBody.java
+/Users/oscar/Developer/LaiOffer/jupiter/src/main/java/com/laioffer/jupiter/serverlet/SearchServlet.java
+/Users/oscar/Developer/LaiOffer/jupiter/src/main/java/com/laioffer/jupiter/external/TwitchException.java
+/Users/oscar/Developer/LaiOffer/jupiter/src/main/java/com/laioffer/jupiter/serverlet/FavoriteServlet.java
+/Users/oscar/Developer/LaiOffer/jupiter/src/main/java/com/laioffer/jupiter/db/MySQLException.java
+/Users/oscar/Developer/LaiOffer/jupiter/src/main/java/com/laioffer/jupiter/external/TwitchClient.java
+/Users/oscar/Developer/LaiOffer/jupiter/src/main/java/com/laioffer/jupiter/db/MySQLConnection.java
+/Users/oscar/Developer/LaiOffer/jupiter/src/main/java/com/laioffer/jupiter/db/MySQLDBUtil.java
