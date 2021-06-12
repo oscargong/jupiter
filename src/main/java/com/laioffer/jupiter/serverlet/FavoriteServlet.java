@@ -21,7 +21,15 @@ public class FavoriteServlet extends HttpServlet {
     // Get user ID from request URL, this is a temporary solution since we don’t support session now
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String userId = request.getParameter("user_id");
+//        String userId = request.getParameter("user_id");
+
+        HttpSession session = request.getSession(false); // fasle，不存在时候创建新的
+        if (session == null) {
+            response.setStatus(HttpServletResponse.SC_FORBIDDEN);
+            return;
+        }
+
+        String userId = (String) session.getAttribute("user_id");
 
         ObjectMapper mapper = new ObjectMapper();
         FavoriteRequestBody body = mapper.readValue( request.getReader(), FavoriteRequestBody.class);
@@ -42,7 +50,12 @@ public class FavoriteServlet extends HttpServlet {
 
     @Override
     protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String userId = request.getParameter("user_id");
+        HttpSession session = request.getSession(false); // fasle，不存在时候创建新的
+        if (session == null) {
+            response.setStatus(HttpServletResponse.SC_FORBIDDEN);
+            return;
+        }
+        String userId = (String) session.getAttribute("user_id");
 
         ObjectMapper mapper = new ObjectMapper();
         FavoriteRequestBody body = mapper.readValue(request.getReader(), FavoriteRequestBody.class);
@@ -63,7 +76,14 @@ public class FavoriteServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String userId = request.getParameter("user_id");
+//        String userId = request.getParameter("user_id");
+
+        HttpSession session = request.getSession(false); // fasle，存在时候创建新的
+        if (session == null) {
+            response.setStatus(HttpServletResponse.SC_FORBIDDEN);
+            return;
+        }
+        String userId = (String) session.getAttribute("user_id");
 
         try(MySQLConnection conn = new MySQLConnection()) {
             Map<String, List<Item>> itemMap = conn.getFavoriteItems(userId);

@@ -54,9 +54,15 @@ Deploy instruction:
 
 ## Diagram
 
+### Backend
+
 ![](https://raw.githubusercontent.com/oscargong/jupiter/main/resources/TwitchAPI.svg)
 
 
-
+### MySQL
 <img src="https://raw.githubusercontent.com/oscargong/jupiter/main/resources/MySQL.svg" style="zoom:75%;" />    
+
+### Authentication (Login/Logout)
+
+---
 
